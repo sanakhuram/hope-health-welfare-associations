@@ -1,0 +1,381 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Set basic styles for HTML and body */
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: "Karla", sans-serif;
+    color: rgb(78, 77, 77);
+    overflow-x: hidden;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+/* Style images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Page header */
+header {
+    background: linear-gradient(90deg, #FFF 0%, #999 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(145, 9, 236, 0.5);
+    z-index: 1000;
+    position: relative;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Nav menu */
+#main-menu {
+    position: absolute;
+    right: 0px;
+    list-style: none;
+    background: linear-gradient(90deg, #FFF 0%, #999 100%);
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgb(211, 154, 228);
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+#main-menu > ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main-menu > ul > li > a {
+    display: inline-block;
+}
+
+li {
+    flex-grow: 1;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+nav ul li a.shop {
+    background-color: #b9a9f9;
+    padding: 8px 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+nav ul li a.shop:hover {
+    background-color: #7f6fc2;
+}
+
+nav ul li a.donate {
+    background-color: #f9a9d0;
+    padding: 8px 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+nav ul li a.donate:hover {
+    background-color: #c27f9f;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(56, 55, 55);
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: rgb(232, 222, 241);
+}
+
+li.active {
+    background-color: rgba(230, 156, 240, 0.986);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+/* Menu toggle icon */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Rotate bars into an 'X' when .menu-open is added */
+.menu-toggle.menu-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.menu-toggle.menu-open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.menu-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Media queries */
+@media (min-width: 920px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .image-banner {
+        padding-top: 80px;
+    }
+
+    #main-menu {
+        display: flex;
+        background: transparent;
+        box-shadow: none;
+        width: 60%;
+        align-items: flex-end;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .li {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 900px) and (min-resolution: 2dppx) {
+    .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .logo h1 {
+        font-size: 15px;
+    }
+header{
+    height: 80px;
+}
+.feedback p{
+    font-size: 11px;
+    padding: 0px 30px 0px 30px;
+}
+    .menu-toggle {
+        height: 50px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        color: #3f3e3e;
+    }
+
+    footer section {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-info, .footer-info ul, .footer-nav ul {
+        text-align: center;
+    }
+
+    .footer-info ul, .footer-nav ul {
+        padding-left: 0;
+        color: grey;
+    }
+
+    .footer-info ul li, .footer-nav ul li {
+        margin: 5px 0;
+        color: rgb(72, 72, 73);
+    }
+
+    .footer-nav ul li a {
+        display: block;
+        padding: 5px 0;
+        color: rgb(71, 71, 71);
+    }
+    
+}
+
+/*feedback*/
+.feedback p{
+    text-align: center;
+    margin: 20px;
+    font-size: 12px;
+    padding: 0px 20px 0px 20px;
+}
+
+/*footer-section*/
+
+footer {
+    background: linear-gradient(90deg, #FFF 0%, #999 100%);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-info ul {
+    padding: 0;
+    text-align: left;
+}
+
+.footer-info ul li {
+    margin: 5px 0;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-nav ul li {
+    margin: 10px 0;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer section, .copyright {
+    flex: 1;
+    margin: 15px;
+    min-width: 100px;
+}
+.footer-end {
+    bottom: 5px;
+    left: 50%;
+   text-align: center;
+    z-index: 1000;
+    font-size: 10px;
+    background: linear-gradient(90deg, #FFF 0%, #999 100%);
+}
+
+.back-to-top {
+    top: 10px;
+    right: 20px;
+    font-size: 12px;
+    z-index: 1000; 
+}
+.back-to-top  a{
+    text-decoration: none;
+    color: #242424;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-top a:hover {
+    background-color: #cccccc7a;
+}
