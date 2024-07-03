@@ -13,6 +13,7 @@ body {
     font-family: "Karla", sans-serif;
     color: rgb(78, 77, 77);
     overflow-x: hidden;
+    background-color: rgb(231, 228, 235);
 }
 
 .content {

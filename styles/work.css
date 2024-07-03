@@ -1,0 +1,199 @@
+@import url(./global.css);
+
+.work-banner {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .work-banner img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-banner img {
+        width: 80%;
+    }
+}
+
+
+/*courses*/
+
+
+.course-section {
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-radius: 40px;
+    z-index: -1;
+}
+
+.course-section h3 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.course-section p, .course-section h4 {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-image:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.course-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.course-list li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+    text-align: left;
+}
+
+.course-list li strong {
+    color: #555;
+}
+
+.text-image img {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Specific Background Gradients */
+.computer-skills {
+    background: linear-gradient(180deg, #9CD4E6 0%, #FFF 100%);
+}
+
+.stitching-sewing {
+    background: linear-gradient(180deg, #9FCDCB 0%, #FFF 100%);
+}
+
+.dars-i-nizami {
+    background: linear-gradient(180deg, #FEC7EC 43.5%, #FEDFF4 68%, #FFF 100%);
+}
+
+.embroidery-course {
+    background: linear-gradient(180deg, #B2B8E2 0%, #FFFEFE 100%);
+}
+
+.self-grooming-courses {
+    border-radius: 40px;
+    background: linear-gradient(180deg, #97D1E5 0%, #FFF 100%);
+}
+.culinary-arts {
+    background: linear-gradient(180deg, #97D1E5 0%, #FFF 100%);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .course-section {
+        padding: 15px;
+        margin: 10px;
+    }
+    .text-image:nth-child(even) {
+        flex-direction: column;
+    }
+    .course-section h3 {
+        font-size: 24px;
+    }
+
+    .course-section h4 {
+        font-size: 20px;
+    }
+
+    .text-image {
+        flex-direction: column;
+    }
+
+    .text-image img {
+        width: 100%;
+    }
+
+    .course-list {
+        width: 100%;
+    }
+
+    .course-list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-section {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .course-section h3 {
+        font-size: 20px;
+    }
+
+    .course-section h4 {
+        font-size: 16px;
+    }
+
+    .text-image {
+        flex-direction: column-reverse;
+    }
+
+    .text-image img {
+        width: 80%;
+    }
+
+    .course-list {
+        width: 100%;
+    }
+
+    .course-list li {
+        font-size: 14px;
+    }
+}
