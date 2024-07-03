@@ -162,7 +162,6 @@ li.active {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    padding: 10px;
 }
 
 .menu-toggle .bar {

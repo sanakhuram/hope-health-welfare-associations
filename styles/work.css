@@ -29,6 +29,55 @@
 }
 
 
+/* Styling the content section */
+.contents {
+    background-color: rgba(243, 238, 238, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    max-width: 800px; /* Ensuring max width for larger screens */
+}
+
+.contents h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.contents p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+@media (max-width: 768px) {
+
+    .contents h2 {
+        font-size: 22px;
+    }
+
+    .contents p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    
+
+    .contents h2 {
+        font-size: 20px;
+    }
+
+    .contents p {
+        font-size: 12px;
+    }
+}
 /*courses*/
 
 
@@ -196,4 +245,35 @@
     .course-list li {
         font-size: 14px;
     }
+}
+.support-facilities {
+    background-color: #E4D6DD; 
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.support-facilities h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.support-facilities .content {
+    line-height: 1.6;
+}
+
+.support-facilities h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.support-facilities p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left; 
 }
