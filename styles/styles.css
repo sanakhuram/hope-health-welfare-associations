@@ -70,7 +70,12 @@ h2 {
     background: linear-gradient(180deg, #97D1E5 0%, #C3E8E6 100%);
     padding: 10px;
     margin: 20px;
-    box-shadow: 0 0 10px rgba(204, 52, 191, 0.5);
+    box-shadow: 0 0 10px rgba(58, 56, 58, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.course:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    box-shadow: 0 0 20px rgba(70, 66, 69, 0.8); /* Enhance shadow on hover */
 }
 
 .course2 {
@@ -113,7 +118,7 @@ button {
 }
 
 button:hover {
-    background-color: #a03d10;
+    background-color: #7859ce;
 }
 
 
@@ -169,6 +174,8 @@ button:hover {
     padding: 20px;
     background: linear-gradient(180deg, #C1AFD9 0%, #EBCCD2 100%);
     box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .future-goals h2 {
@@ -264,7 +271,7 @@ button:hover {
 }
 
 .contact-text button:hover {
-    background-color: #a03d10;
+    background-color: #7f56dd;
 }
 
 @media (min-width: 600px) {
@@ -284,8 +291,15 @@ button:hover {
     background: linear-gradient(90deg, #999 0%, #CDCFF0 100%);
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(204, 133, 52, 0.5);
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.stitch-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(204, 133, 52, 0.8); 
+}
 
 .stitch-box-content {
     display: flex;
@@ -297,8 +311,7 @@ button:hover {
 }
 
 .stitch-box-image img {
-    max-width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 50px 0px;
     box-shadow: 0 0 10px rgba(204, 52, 166, 0.5);
     border: 1px solid rgb(114, 106, 117);
@@ -316,7 +329,6 @@ button:hover {
 .stitch-box-text p {
     margin-bottom: 20px;
     line-height: 2;
-    margin:0 50px;
 }
 
 .stitch-box-text button {
