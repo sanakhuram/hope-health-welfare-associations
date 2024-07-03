@@ -51,13 +51,14 @@ h2 {
     text-align: center;
 }
 
+/*courses*/
 
 .courses {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    margin: 20px;
-    
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
 .course {
@@ -103,7 +104,8 @@ h2 {
     background-color: #f3611d;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px; /* Adjust padding for smaller buttons */
+    font-size: 14px; /* Adjust font size for smaller buttons */
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
@@ -164,7 +166,7 @@ line-height: normal;
     }
 
     .course1, .course2, .course3 {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: 0 auto;
     }
@@ -178,8 +180,7 @@ line-height: normal;
     }
 
     .image-container {
-        width: 135px;
-        height: 163px;
+        width: 100px;
     }
 }
 
