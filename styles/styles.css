@@ -342,10 +342,7 @@ button:hover {
         max-width: 600px;
     }
     .stitch-box-text p {
-        margin: 0 50px 20px 50px;
-        line-height: none;
-        font-size: 10px;
-         
+        margin: 0 50px 20px 50px;    
     }
 
     .stitch-box-text button {
