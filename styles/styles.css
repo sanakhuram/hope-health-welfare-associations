@@ -204,7 +204,9 @@ button:hover {
 
 .text ul li {
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 15px;
+    text-align: left;
+    color:rgb(44, 42, 42);
 }
 
 @media (min-width: 600px) {
@@ -248,7 +250,8 @@ button:hover {
 
 .contact-text p {
     margin-bottom: 20px;
-    margin: 50px;
+    font-size: 15px;
+    line-height: 2;
 }
 
 .contact-text button {
@@ -370,5 +373,8 @@ button:hover {
     font-weight: 400;
     line-height: normal;
     }
-        
+     .text ul li {
+        font-size: 12px;
+        text-align: left;
+     }   
     }
