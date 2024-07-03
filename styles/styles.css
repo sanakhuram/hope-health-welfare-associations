@@ -104,12 +104,12 @@ button {
     background-color: #f3611d;
     color: white;
     border: none;
-    padding: 5px 10px; /* Adjust padding for smaller buttons */
-    font-size: 14px; /* Adjust font size for smaller buttons */
+    padding: 5px 10px; 
+    font-size: 14px; 
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px auto; /* Center the buttons */
-    display: block; /* Ensure buttons are block elements */
+    margin: 10px auto; 
+    display: block; 
 }
 
 button:hover {
@@ -121,7 +121,7 @@ button:hover {
 
 @media(min-width: 600px) {
     .courses {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
         margin: 0 auto;
     }
