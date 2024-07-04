@@ -84,6 +84,7 @@
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    box-shadow: 0 4px 8px rgb(140, 102, 158)
 }
 
 .about-text p {
@@ -545,6 +546,7 @@
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0)
 }
 
 .about-end p {
