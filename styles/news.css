@@ -45,13 +45,23 @@
     margin-bottom: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for better separation */
 }
-
+.banner-content p{
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 @media only screen and (min-width: 240px) and (max-width: 1050px) and (min-resolution: 2dppx) {
     .banner-content h2 {
         font-size: 1.5em;
     }
- 
+    .banner-content p{
+        font-size: 12px;
+    }
 }
 
 .news-content p{
@@ -276,5 +286,125 @@
 @media (max-width: 480px) {
     .photo-gallery {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+
+/*contact us*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: linear-gradient(180deg, #C1AFD9 0%, #EBCCD2 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.send-message, .bank-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.send-message h2, .bank-details h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+.send-message form {
+    display: flex;
+    flex-direction: column;
+}
+.send-message input, .send-message textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.send-message button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #00bfa5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.send-message button:hover {
+    background-color: #008f7a;
+}
+.bank-details p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+.bank-details p span {
+    font-weight: bold;
+}
+.bank-details a {
+    color: #00bfa5;
+    text-decoration: none;
+}
+.bank-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .send-message, .bank-details {
+        padding: 10px;
+    }
+    .send-message input, .send-message textarea, .send-message button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .send-message h2, .bank-details h2 {
+        font-size: 20px;
+    }
+    .bank-details p {
+        font-size: 14px;
+    }
+    .send-message {
+        order: 2;
+    }
+    .bank-details {
+        order: 1;
+        text-align: center;
+    }
+}
+
+.contact-info {
+    text-align: center;
+    margin: 20px;
+}
+.map {
+    width: 100%;
+    max-width: 600px;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    margin: 0 auto; /* Center the map */
+}
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+@media (max-width: 600px) {
+    .contact-info {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .map {
+        max-width: 100%;
+        padding-bottom: 75%; /* Adjust the aspect ratio for smaller screens */
     }
 }
