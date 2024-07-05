@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hope and Health Welfare Association</title>
     <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="./styles/styles.css">
-
+    <link rel="stylesheet" href="./styles/box.css">
 </head>
 
 <body>
@@ -32,14 +31,75 @@
                 <li><a href="./stitchbox.html" class="shop">Our Shop</a></li>
                 <li><a href="./contact.html" class="donate">Donate</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
-<div class="feedback">
-    <p>We would love to hear from you! Whether you have questions, need more information, or want to support our cause,
-        please get in touch with us. You can also follow us on our social media channels for the latest updates and
-        news.</p>
-    <p>Join us in our mission to empower women and transform lives. Together, we can make a difference.</p>
-</div>
+    
+    <section>
+        <div class="box-banner">
+            <img src="./assets/images/box1.jpg" alt="banner photo">
+            <div class="box-content">
+                <h2>STITCH BOX</h2>
+                <p>This shop offers beautiful garments made by graduates of the Stitch Box Training Program. Stitch Box is a non-profit initiative providing free stitching training to empower women. Purchases support the training program and children's education. All profits fund these efforts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <p>Browse our collection and place your order using the form Below</p>
+    </section>
+    <section class="additional-image-section" id="image-gallery">
+        <!-- Images will be inserted here by JavaScript -->
+    </section>
+    
+    <!-- New "How to Order" Section -->
+    <section class="how-to-order">
+        <div class="top-image">
+            <img src="./assets/images/box2.jpg" alt="Top Decorative Image">
+            <h2>How to Order</h2>
+        </div>
+        <div class="instructions">
+            <h3>Instructions for Customers</h3>
+            <ol>
+                <li>Browse our products on the website.</li>
+                <li>Note the product codes of the items you wish to purchase.</li>
+                <li>Fill out the form with your details, including the product codes and quantities.</li>
+                <li>Submit the form, and you will receive a confirmation email or phone call for order verification.</li>
+            </ol>
+        </div>
+        <div class="order-form">
+            <h3>Order Request</h3>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" required></textarea>
+                
+                <label for="product-details">Product Code(s) and Quantity</label>
+                <textarea id="product-details" name="product-details" required></textarea>
+                
+                <button type="submit">Send Order Request</button>
+            </form>
+        </div>
+        <div class="bottom-image">
+            <img src="./assets/images/box3.jpg" alt="Bottom Decorative Image">
+        </div>
+    </section>
+
+    <div class="feedback">
+        <p>We would love to hear from you! Whether you have questions, need more information, or want to support our cause,
+            please get in touch with us. You can also follow us on our social media channels for the latest updates and
+            news.</p>
+        <p>Join us in our mission to empower women and transform lives. Together, we can make a difference.</p>
+    </div>
+
     <footer>
         <section class="footer-logo">
             <img src="./assets/images/logo.png" alt="logo">
@@ -49,11 +109,10 @@
                 <img src="./assets/images/insta.png" alt="Instagram icon">
             </div>
         </section>
-       <div class="copyright">
-        <p>Established in © 2010 this association is registered with reg.no.786/SDC/17</p>
-       </div>
+        <div class="copyright">
+            <p>Established in © 2010 this association is registered with reg.no.786/SDC/17</p>
+        </div>
         <section class="footer-info">
-           
             <p>Affiliated with:
                 <ul>
                     <li>Skill Development Council Punjab</li>
