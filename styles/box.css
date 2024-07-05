@@ -17,9 +17,9 @@ body::before {
     opacity: 0.5; 
 }
 
-header,nav .box-banner, .products, .additional-image-section, .feedback, footer {
+header,.nav .box-banner, .products, .additional-image-section, .feedback, footer {
     position: relative; /* Create a stacking context */
-    z-index: 1000; /* Ensure these elements are above the background */
+    z-index: 2000; /* Ensure these elements are above the background */
 }
 
 .box-banner {
