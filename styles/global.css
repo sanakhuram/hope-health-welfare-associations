@@ -381,3 +381,14 @@ footer section, .copyright {
 .back-to-top a:hover {
     background-color: #cccccc7a;
 }
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .back-to-top a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
