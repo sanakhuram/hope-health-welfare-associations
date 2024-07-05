@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Menu Toggle
+    
+    
     const menuToggle = document.getElementById('menu-toggle');
     const mainMenu = document.getElementById('main-menu');
 
@@ -16,14 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const href = this.getAttribute('href');
             
-            document.body.classList.add('fade-out');
+            // Add the slide-out class to the body
+            document.body.classList.add('page-slide-out');
             
+            // Wait for the animation to complete (0.5s) before navigating
             setTimeout(() => {
                 window.location.href = href;
-            }, 5);
+            }, 500); // Match this duration to the CSS animation duration
         });
     });
-
 
     document.addEventListener('DOMContentLoaded', function() {
         const backToTopButton = document.querySelector('.back-to-top a');

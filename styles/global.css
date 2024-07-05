@@ -392,3 +392,18 @@ footer section, .copyright {
         font-size: 14px;
     }
 }
+
+
+        /* Initial state */
+        .page-slide-out {
+            animation: slideOut 0.5s forwards;
+        }
+
+        @keyframes slideOut {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
