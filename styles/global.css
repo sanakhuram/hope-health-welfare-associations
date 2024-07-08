@@ -407,3 +407,6 @@ footer section, .copyright {
                 transform: translateX(-100%);
             }
         }
+a{
+    text-decoration: none;
+}
