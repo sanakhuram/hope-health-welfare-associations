@@ -2,14 +2,15 @@ import { initMenuToggle } from './menu.js';
 import { initTransitionLinks } from './transition.js';
 import { initBackToTop } from './backToTop.js';
 import { initImageGallery } from './imageGallery.js';
-import { initFormSubmission } from './form.js';
 
+import { initDraggableGallery } from './gallery.js';
+import { initPhotoGallery } from './photos.js';
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM fully loaded and parsed');
     initMenuToggle();
     initTransitionLinks();
     initBackToTop();
     initImageGallery();
-    initFormSubmission();
+    initDraggableGallery();
+    initPhotoGallery();
 });

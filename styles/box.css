@@ -17,11 +17,21 @@ body::before {
     opacity: 0.5; 
 }
 
-header,.nav .box-banner, .products, .additional-image-section, .feedback, footer {
+header,.nav .box-banner, .products, .additional-image-section, .feedback, .gallery-container ,footer {
     position: relative; /* Create a stacking context */
     z-index: 2000; /* Ensure these elements are above the background */
 }
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3000; /* Ensure header is above other elements */
+}
 
+.nav {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3000; /* Ensure navigation is above other elements */
+}
 .box-banner {
     width: 100%;
     display: flex;
@@ -225,4 +235,40 @@ header,.nav .box-banner, .products, .additional-image-section, .feedback, footer
 
 .how-to-order button:hover {
     background-color: #2b1463;
+}
+/*gallery*/
+h2 {
+    margin-bottom: 20px;
+    z-index: 2000;
+    text-align: center;
+}
+.gallery-container {
+    overflow-x: auto;  /* Allows horizontal scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;  /* Optional: border around the gallery */
+    background-color: #fff;  /* White background for the gallery area */
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px; /* Space between images */
+    align-items: center;
+}
+
+.gallery img {
+    width: 300px;  /* Set the width of each image */
+    height: auto;  /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: add a shadow to images */
+    border-radius: 5px;  /* Optional: rounded corners for images */
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
 }
