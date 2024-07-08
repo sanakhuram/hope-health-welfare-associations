@@ -17,7 +17,7 @@ body::before {
     opacity: 0.5; 
 }
 
-header,.nav .box-banner, .products, .additional-image-section, .feedback, .gallery-container ,footer {
+header,.nav,h2, .box-banner, .products, .additional-image-section, .feedback, .gallery-container ,footer {
     position: relative; /* Create a stacking context */
     z-index: 2000; /* Ensure these elements are above the background */
 }
@@ -96,6 +96,9 @@ header {
     }
     .products p{
         font-size: 10px;
+    }
+    .how-to-order .top-image h2{
+        font-size:15px;
     }
 }
 
@@ -178,7 +181,7 @@ header {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
+    font-size: 24px;
     color: #333;
     text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
 }
@@ -253,6 +256,7 @@ h2 {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    background: linear-gradient(180deg, #E4D6DD 0%, #F6F2F2 100%);
 }
 
 .gallery {
@@ -267,8 +271,18 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: add a shadow to images */
     border-radius: 5px;  /* Optional: rounded corners for images */
     transition: transform 0.3s;
+    margin: 10px;
 }
 
 .gallery img:hover {
     transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: rgb(201, 6, 168); /* Change to desired color */
 }
