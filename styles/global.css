@@ -185,6 +185,26 @@ li.active {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: black; /* Default color */
+    margin: 6px 0;
+    transition: background-color 0.3s;
+  }
+  
+  /* Dark mode styles */
+  @media (prefers-color-scheme: dark) {
+    .bar {
+      background-color: white; /* Color for dark mode */
+    }
+  }
+  
+  /* Optional: Styles when the menu is open */
+  .menu-open .bar {
+    background-color: grey; /* Change color when menu is open */
+  }
+
 /* Media queries */
 @media (min-width: 920px) {
     .menu-toggle {
