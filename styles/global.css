@@ -207,7 +207,7 @@ li.active {
   /* Dark mode styles when the menu is open */
   @media (prefers-color-scheme: dark) {
     .menu-toggle.menu-open .bar {
-      background-color: rgb(165, 24, 24); /* Color for dark mode when menu is open */
+      background-color: rgb(253, 248, 248); /* Color for dark mode when menu is open */
     }
   }
 
