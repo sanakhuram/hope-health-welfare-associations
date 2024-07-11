@@ -167,7 +167,7 @@ li.active {
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: rgb(250, 30, 114);
     margin: 4px 0;
     transition: 0.4s;
 }
@@ -187,7 +187,7 @@ li.active {
 .bar {
     width: 35px;
     height: 5px;
-    background-color: black; /* Default color */
+    background-color: rgb(245, 81, 5); /* Default color */
     margin: 6px 0;
     transition: background-color 0.3s;
   }
@@ -201,7 +201,7 @@ li.active {
   
   /* Optional: Styles when the menu is open */
   .menu-toggle.menu-open .bar {
-    background-color: pink; /* Change color when menu is open */
+    background-color: rgb(245, 72, 10); /* Change color when menu is open */
   }
   
   /* Dark mode styles when the menu is open */
