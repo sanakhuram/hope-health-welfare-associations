@@ -59,7 +59,7 @@ There are many ways you can contribute to our mission and help us make a positiv
 - **Partner:** Collaborate with us as a community partner or sponsor.
 - **Advocate:** Spread the word and raise awareness about our initiatives.
 
-To learn more about volunteering, donating, or partnering with us, visit our [Get Involved](https://sanakhuram.github.io/hope-health-welfare-associations/contact.html.html) page.
+To learn more about volunteering, donating, or partnering with us, visit our [Get Involved](https://sanakhuram.github.io/hope-health-welfare-associations/contact.html) page.
 
 ## Shop
 
