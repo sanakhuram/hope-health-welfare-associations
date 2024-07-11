@@ -184,7 +184,6 @@ li.active {
 .menu-toggle.menu-open .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -5px);
 }
-
 .bar {
     width: 35px;
     height: 5px;
@@ -201,8 +200,15 @@ li.active {
   }
   
   /* Optional: Styles when the menu is open */
-  .menu-open .bar {
+  .menu-toggle.menu-open .bar {
     background-color: grey; /* Change color when menu is open */
+  }
+  
+  /* Dark mode styles when the menu is open */
+  @media (prefers-color-scheme: dark) {
+    .menu-toggle.menu-open .bar {
+      background-color: lightgrey; /* Color for dark mode when menu is open */
+    }
   }
 
 /* Media queries */
