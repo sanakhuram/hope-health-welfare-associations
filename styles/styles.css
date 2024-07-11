@@ -10,7 +10,8 @@
 
 .video-container {
     width: 100%;
-    height: 70vh; /* Adjust as needed to cover the desired area */
+    height: 70vh;
+    /* Adjust as needed to cover the desired area */
     overflow: hidden;
 }
 
@@ -19,9 +20,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire container */
-    z-index: -1; /* Ensures the video is behind any other content */
+    object-fit: cover;
+    /* Ensures the video covers the entire container */
+    z-index: -1;
+    /* Ensures the video is behind any other content */
 }
+
 .banner-content {
     position: absolute;
     top: 70%;
@@ -35,7 +39,8 @@
 .banner-content .logo {
     display: block;
     height: 100px;
-    margin: 0 auto 10px; /* Adjust margin as needed */
+    margin: 0 auto 10px;
+    /* Adjust margin as needed */
 }
 
 .banner h2 {
@@ -56,6 +61,7 @@
     margin: 40px auto;
     box-shadow: 0 0 10px rgba(204, 52, 166, 0.5);
 }
+
 h2 {
     text-align: center;
 }
@@ -80,11 +86,14 @@ h2 {
     padding: 10px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(58, 56, 58, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .course:hover {
-    transform: scale(1.05); /* Slightly increase the size on hover */
-    box-shadow: 0 0 20px rgba(70, 66, 69, 0.8); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    /* Slightly increase the size on hover */
+    box-shadow: 0 0 20px rgba(70, 66, 69, 0.8);
+    /* Enhance shadow on hover */
 }
 
 .course2 {
@@ -114,16 +123,17 @@ h2 {
     text-align: left;
     width: 100%;
 }
+
 button {
     background-color: #f3611d;
     color: white;
     border: none;
-    padding: 5px 10px; 
-    font-size: 14px; 
+    padding: 5px 10px;
+    font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px auto; 
-    display: block; 
+    margin: 10px auto;
+    display: block;
 }
 
 button:hover {
@@ -148,7 +158,7 @@ button:hover {
 
 @media(min-width: 900px) {
     .courses {
-        grid-template-columns: 1fr  1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 }
@@ -222,7 +232,7 @@ button:hover {
     margin-bottom: 15px;
     font-size: 15px;
     text-align: left;
-    color:rgb(44, 42, 42);
+    color: rgb(44, 42, 42);
 }
 
 @media (min-width: 600px) {
@@ -235,6 +245,7 @@ button:hover {
         font-size: 18px;
     }
 }
+
 .contact {
     padding: 20px;
     background: radial-gradient(50% 50% at 50% 50%, #dd8dba 0%, #ECCDD2 100%);
@@ -295,6 +306,7 @@ button:hover {
         max-width: 600px;
     }
 }
+
 .stitch-box {
     padding: 20px;
     background: linear-gradient(90deg, #999 0%, #CDCFF0 100%);
@@ -305,9 +317,10 @@ button:hover {
     margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .stitch-box:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(204, 133, 52, 0.8); 
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(204, 133, 52, 0.8);
 }
 
 .stitch-box-content {
@@ -365,44 +378,48 @@ button:hover {
         text-align: left;
         max-width: 600px;
     }
+
     .stitch-box-text p {
-        margin: 0 50px 20px 50px;    
+        margin: 0 50px 20px 50px;
     }
 
     .stitch-box-text button {
-        margin: 20px auto 0; /* Center the button on larger screens */
+        margin: 20px auto 0;
+        /* Center the button on larger screens */
     }
 }
 
 @media only screen and (min-width: 240px) and (max-width: 1050px) and (min-resolution: 2dppx) {
-  
-    h3{
+
+    h3 {
         font-size: 15px;
     }
-        .banner-content .logo{
-            height: 50px;
-        }
-        .banner h2 {
-            font-size: 10px;
-            font-weight: 400;
-        }
-        
-    .mission{
-    text-align: center;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
+    .banner-content .logo {
+        height: 50px;
     }
-     .text ul li {
+
+    .banner h2 {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .mission {
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .text ul li {
         font-size: 12px;
         text-align: left;
-     }
-     .video-container {
-        height: 20vh; /* Adjust the height for smaller screens if needed */
     }
-       
-    }
- 
 
-    transition
+    .video-container {
+        height: 20vh;
+        /* Adjust the height for smaller screens if needed */
+    }
+
+}

@@ -5,9 +5,10 @@
 .work-banner {
     position: relative;
     width: 100%;
-    
+
     margin: 0 auto;
 }
+
 .work-banner img {
     width: 100%;
     height: auto;
@@ -46,6 +47,7 @@
     .contents p {
         display: none;
     }
+
     .contents h2 {
         font-size: 20px;
     }
@@ -152,6 +154,7 @@
     border-radius: 40px;
     background: linear-gradient(180deg, #97D1E5 0%, #FFF 100%);
 }
+
 .culinary-arts {
     background: linear-gradient(180deg, #97D1E5 0%, #FFF 100%);
 }
@@ -162,9 +165,11 @@
         padding: 15px;
         margin: 10px;
     }
+
     .text-image:nth-child(even) {
         flex-direction: column;
     }
+
     .course-section h3 {
         font-size: 24px;
     }
@@ -221,8 +226,9 @@
         font-size: 14px;
     }
 }
+
 .support-facilities {
-    background-color: #E4D6DD; 
+    background-color: #E4D6DD;
     padding: 20px;
     margin: 0 auto;
     border-radius: 10px;
@@ -250,5 +256,5 @@
 .support-facilities p {
     font-size: 16px;
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
 }

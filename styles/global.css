@@ -31,6 +31,7 @@ body {
         transform: scale(0.95);
     }
 }
+
 /* Style images */
 img {
     max-width: 100%;
@@ -87,12 +88,12 @@ header .logo {
     display: none;
 }
 
-#main-menu > ul {
+#main-menu>ul {
     list-style: none;
     padding: 0;
 }
 
-#main-menu > ul > li > a {
+#main-menu>ul>li>a {
     display: inline-block;
 }
 
@@ -106,7 +107,7 @@ li {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    
+
 }
 
 nav ul li a.shop {
@@ -184,32 +185,37 @@ li.active {
 .menu-toggle.menu-open .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -5px);
 }
+
 .bar {
     width: 35px;
     height: 5px;
-    background-color: rgb(245, 81, 5); /* Default color */
+    background-color: rgb(245, 81, 5);
+    /* Default color */
     margin: 6px 0;
     transition: background-color 0.3s;
-  }
-  
-  /* Dark mode styles */
-  @media (prefers-color-scheme: dark) {
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
     .bar {
-      background-color: black; /* Color for dark mode */
+        background-color: black;
+        /* Color for dark mode */
     }
-  }
-  
-  /* Optional: Styles when the menu is open */
-  .menu-toggle.menu-open .bar {
-    background-color: rgb(245, 72, 10); /* Change color when menu is open */
-  }
-  
-  /* Dark mode styles when the menu is open */
-  @media (prefers-color-scheme: dark) {
+}
+
+/* Optional: Styles when the menu is open */
+.menu-toggle.menu-open .bar {
+    background-color: rgb(245, 72, 10);
+    /* Change color when menu is open */
+}
+
+/* Dark mode styles when the menu is open */
+@media (prefers-color-scheme: dark) {
     .menu-toggle.menu-open .bar {
-      background-color: black /* Color for dark mode when menu is open */
+        background-color: black
+            /* Color for dark mode when menu is open */
     }
-  }
+}
 
 /* Media queries */
 @media (min-width: 920px) {
@@ -246,16 +252,20 @@ li.active {
     .logo h1 {
         font-size: 15px;
     }
-header{
-    height: 60px;
-}
-.feedback p{
-    font-size: 11px;
-    padding: 0px 30px 0px 30px;
-}
+
+    header {
+        height: 60px;
+    }
+
+    .feedback p {
+        font-size: 11px;
+        padding: 0px 30px 0px 30px;
+    }
+
     .menu-toggle {
         height: 50px;
     }
+
     footer {
         flex-direction: column;
         align-items: center;
@@ -286,11 +296,11 @@ header{
         padding: 5px 0;
         color: rgb(71, 71, 71);
     }
-    
+
 }
 
 /*feedback*/
-.feedback p{
+.feedback p {
     text-align: center;
     margin: 20px;
     font-size: 12px;
@@ -382,10 +392,11 @@ footer section, .copyright {
     margin: 15px;
     min-width: 100px;
 }
+
 .footer-end {
     bottom: 5px;
     left: 50%;
-   text-align: center;
+    text-align: center;
     z-index: 1000;
     font-size: 10px;
     background: linear-gradient(90deg, #FFF 0%, #999 100%);
@@ -395,9 +406,10 @@ footer section, .copyright {
     top: 10px;
     right: 20px;
     font-size: 12px;
-    z-index: 1000; 
+    z-index: 1000;
 }
-.back-to-top  a{
+
+.back-to-top a {
     text-decoration: none;
     color: #242424;
     padding: 5px 10px;
@@ -408,10 +420,12 @@ footer section, .copyright {
 .back-to-top a:hover {
     background-color: #cccccc7a;
 }
+
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .back-to-top a {
@@ -419,27 +433,29 @@ footer section, .copyright {
         font-size: 14px;
     }
 }
+
 /* Show the back-to-top button when the page is scrolled down */
 body:has(.back-to-top:target) .back-to-top,
 html:has(body:not(:target)) .back-to-top {
     display: block;
 }
 
-        /* Initial state */
-        .page-slide-out {
-            animation: slideOut 0.5s forwards;
-        }
+/* Initial state */
+.page-slide-out {
+    animation: slideOut 0.5s forwards;
+}
 
-        @keyframes slideOut {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-a{
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+a {
     text-decoration: none;
     color: rgb(54, 54, 54);
 }
-

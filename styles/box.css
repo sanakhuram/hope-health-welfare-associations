@@ -1,294 +1,312 @@
 @import url(./global.css);
 
-
-
 body::before {
-    content: '';
-    position: fixed; /* Fixes the background so it doesn't scroll with content */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/assets/images/body.jpg');
-    background-size: cover; /* Ensure the image covers the entire body */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    filter: grayscale(100%); 
-    opacity: 0.5; 
+  content: "";
+  position: fixed; /* Fixes the background so it doesn't scroll with content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/body.jpg");
+  background-size: cover; /* Ensure the image covers the entire body */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  filter: grayscale(100%);
+  opacity: 0.5;
 }
 
-header,.nav,h2, .box-banner, .products, .additional-image-section, .feedback, .gallery-container ,footer {
-    position: relative; /* Create a stacking context */
-    z-index: 2000; /* Ensure these elements are above the background */
+header,
+.nav,
+h2,
+.box-banner,
+.products,
+.additional-image-section,
+.feedback,
+.gallery-container,
+footer {
+  position: relative; /* Create a stacking context */
+  z-index: 2000; /* Ensure these elements are above the background */
 }
 header {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 3000; /* Ensure header is above other elements */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 3000; /* Ensure header is above other elements */
 }
 
 .nav {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 3000; /* Ensure navigation is above other elements */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 3000; /* Ensure navigation is above other elements */
 }
 .box-banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .box-banner img {
-    width: 100%;
-    height: 600px;
-    display: block;
-    opacity: 0.7;
-
+  width: 100%;
+  height: 600px;
+  display: block;
+  opacity: 0.7;
 }
 
 .box-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #c79c9c; /* Adjust this to match your body background color */
-    mix-blend-mode: multiply; /* Ensure the overlay blends with the background */
-    pointer-events: none; /* Ensure the overlay doesn't interfere with image interactions */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c79c9c; /* Adjust this to match your body background color */
+  mix-blend-mode: multiply; /* Ensure the overlay blends with the background */
+  pointer-events: none; /* Ensure the overlay doesn't interfere with image interactions */
 }
 
 .box-content {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    text-align: center;  
-    border-radius: 5px;
-    padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .box-content h2 {
-    margin: 0;
-    padding: 10px;
-    font-size: 2em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
+  margin: 0;
+  padding: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
 }
 
 .box-content p {
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 15px;
-    margin-bottom: 10px;
-     background: rgba(189, 169, 165, 0.322);
-     
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: rgba(189, 169, 165, 0.322);
 }
 
 @media only screen and (min-width: 240px) and (max-width: 1050px) and (min-resolution: 2dppx) {
-    .box-content h2 {
-        font-size: 15px;
-    }
-    .box-content p {
-        font-size: 8px;
-    }
-    .products h2{
-        font-size: 15px;
-    }
-    .products p{
-        font-size: 10px;
-    }
-    .how-to-order .top-image h2{
-        font-size:15px;
-    }
-    .box-banner img{
-        height: auto;
-    }
+  .box-content h2 {
+    font-size: 15px;
+  }
+  .box-content p {
+    font-size: 8px;
+  }
+  .products h2 {
+    font-size: 15px;
+  }
+  .products p {
+    font-size: 10px;
+  }
+  .how-to-order .top-image h2 {
+    font-size: 15px;
+  }
+  .box-banner img {
+    height: auto;
+  }
 }
 
-.products h2{
-    text-align: center;
-    font-size: 24px;
-    text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
+.products h2 {
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
 }
-.products p{
-    text-align: center;
-    font-size: 12px;
+.products p {
+  text-align: center;
+  font-size: 12px;
 }
 
 .additional-image-section {
-    max-width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 30px;
-    padding: 20px;
-   
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px;
 }
 
 .image-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    background-color: #cac3c3;
-    box-shadow: 0 0 10px rgba(58, 56, 58, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #cac3c3;
+  box-shadow: 0 0 10px rgba(58, 56, 58, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .image-item h3 {
-    margin: 10px 0;
-    font-size: 1.2em;
-    padding: 10px;
-    text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
+  margin: 10px 0;
+  font-size: 1.2em;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
 }
 
 .image-item p {
-    margin: 5px 0;
-    font-size: 0.9em;
+  margin: 5px 0;
+  font-size: 0.9em;
 }
 
 /* New Styles for How to Order Section */
 /* Styles for How to Order Section */
 .how-to-order {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    background-color: #ece5e5; /* Match the body background color */
-    position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ece5e5; /* Match the body background color */
+  position: relative;
 }
 
-.how-to-order .top-image, .how-to-order .bottom-image {
-    position: relative;
-    text-align: center;
+.how-to-order .top-image,
+.how-to-order .bottom-image {
+  position: relative;
+  text-align: center;
 }
 
-.how-to-order .top-image img, .how-to-order .bottom-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.5;
-    filter: grayscale(10%);
-    mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent); /* Blend edges */
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent); /* Blend edges for Webkit browsers */
+.how-to-order .top-image img,
+.how-to-order .bottom-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.5;
+  filter: grayscale(10%);
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  ); /* Blend edges */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  ); /* Blend edges for Webkit browsers */
 }
 
 .how-to-order .top-image h2 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: #333;
-    text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(240, 147, 194, 0.7);
 }
 
-.how-to-order .instructions, .how-to-order .order-form {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: rgb(233, 219, 219);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.how-to-order .instructions,
+.how-to-order .order-form {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgb(233, 219, 219);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .how-to-order h3 {
-    color: #333;
-    margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .how-to-order ol li {
-    text-align: left;
-    padding-left: 20px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .how-to-order form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .how-to-order label {
-    margin-top: 10px;
-    color: #333;
-    text-align: left;
+  margin-top: 10px;
+  color: #333;
+  text-align: left;
 }
 
-.how-to-order input, .how-to-order textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    text-align: left;
+.how-to-order input,
+.how-to-order textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: left;
 }
 
 .how-to-order button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #9369e2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #9369e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .how-to-order button:hover {
-    background-color: #2b1463;
+  background-color: #2b1463;
 }
 /*gallery*/
 h2 {
-    margin-bottom: 20px;
-    z-index: 2000;
-    text-align: center;
+  margin-bottom: 20px;
+  z-index: 2000;
+  text-align: center;
 }
 .gallery-container {
-    overflow-x: auto;  /* Allows horizontal scrolling */
-    padding: 10px;
-    border: 1px solid #ccc;  /* Optional: border around the gallery */
-    background-color: #fff;  /* White background for the gallery area */
-    cursor: grab;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    background: linear-gradient(180deg, #E4D6DD 0%, #F6F2F2 100%);
+  overflow-x: auto; /* Allows horizontal scrolling */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: border around the gallery */
+  background-color: #fff; /* White background for the gallery area */
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #e4d6dd 0%, #f6f2f2 100%);
 }
 
 .gallery {
-    display: flex;
-    gap: 10px; /* Space between images */
-    align-items: center;
+  display: flex;
+  gap: 10px; /* Space between images */
+  align-items: center;
 }
 
 .gallery img {
-    width: 300px;  /* Set the width of each image */
-    height: auto;  /* Maintain aspect ratio */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: add a shadow to images */
-    border-radius: 5px;  /* Optional: rounded corners for images */
-    transition: transform 0.3s;
-    margin: 10px;
+  width: 300px; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow to images */
+  border-radius: 5px; /* Optional: rounded corners for images */
+  transition: transform 0.3s;
+  margin: 10px;
 }
 
 .gallery img:hover {
-    transform: scale(1.05); /* Slightly enlarge image on hover */
+  transform: scale(1.05); /* Slightly enlarge image on hover */
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .price {
-    font-weight: bold;
-    color: rgb(201, 6, 168); /* Change to desired color */
+  font-weight: bold;
+  color: rgb(201, 6, 168); /* Change to desired color */
 }
