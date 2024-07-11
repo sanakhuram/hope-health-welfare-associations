@@ -187,7 +187,7 @@ li.active {
 .bar {
     width: 35px;
     height: 5px;
-    background-color: black; /* Default color */
+    background-color: rgb(253, 253, 253); /* Default color */
     margin: 6px 0;
     transition: background-color 0.3s;
   }
@@ -201,13 +201,13 @@ li.active {
   
   /* Optional: Styles when the menu is open */
   .menu-toggle.menu-open .bar {
-    background-color: grey; /* Change color when menu is open */
+    background-color: rgb(248, 248, 248); /* Change color when menu is open */
   }
   
   /* Dark mode styles when the menu is open */
   @media (prefers-color-scheme: dark) {
     .menu-toggle.menu-open .bar {
-      background-color: lightgrey; /* Color for dark mode when menu is open */
+      background-color: rgb(165, 24, 24); /* Color for dark mode when menu is open */
     }
   }
 
