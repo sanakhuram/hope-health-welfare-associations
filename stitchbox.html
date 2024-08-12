@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./styles/box.css">
     <script type="module" src="./script/main.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="module" src="./script/orderForm.js"></script>
+</head>
 
 <body>
     <header>
@@ -93,6 +96,8 @@
 
                 <button type="submit">Send Order Request</button>
             </form>
+            <div id="orderMessage" style="display:none; color: green;"></div>
+
         </div>
         <div class="bottom-image">
             <img src="./assets/images/box3.jpg" alt="Bottom Decorative Image">
