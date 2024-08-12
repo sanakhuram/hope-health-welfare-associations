@@ -1,48 +1,20 @@
-let isFormSubmissionInitialized = false;
+(function(){
+  emailjs.init("TgHWfRP3j9cb7-Mhc"); // Replace with your correct Public Key
+})();
 
 export function initFormSubmission() {
-  if (isFormSubmissionInitialized) return;
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-  const contactForm = document.getElementById("contactForm");
+    const serviceID = 'service_b3u5zha'; // Your actual Service ID
+    const templateID = 'template_bgiq7hz'; // Your actual Template ID
 
-  if (!contactForm) {
-    console.error("Contact form not found");
-    return;
-  }
-
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const formData = new FormData(this);
-
-    fetch("http://localhost:3000/send-email", {
-      method: "POST",
-      body: JSON.stringify({
-        name: formData.get("name"),
-        email: formData.get("email"),
-        message: formData.get("message"),
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          alert("Message sent successfully!");
-        } else {
-          alert("Failed to send message.");
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        alert('Message sent successfully!');
+      }, (err) => {
+        alert(`Failed to send message: ${err.text}`);
+        console.error('Failed to send message:', err);
       });
   });
-
-  isFormSubmissionInitialized = true;
 }
-
-// Ensure this script is included and executed on all pages
-document.addEventListener("DOMContentLoaded", function () {
-  initFormSubmission();
-});
