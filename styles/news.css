@@ -443,3 +443,10 @@ h2 {
         /* Adjust the aspect ratio for smaller screens */
     }
 }
+
+/*message page*/
+
+
+.thank-you-message p{
+    text-align: center;
+}

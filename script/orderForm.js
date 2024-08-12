@@ -1,40 +1,32 @@
 // Initialize EmailJS with your Public Key
 (function(){
-    emailjs.init("TgHWfRP3j9cb7-Mhc"); // Replace with your correct Public Key
+    emailjs.init("TgHWfRP3j9cb7-Mhc");
+    console.log('EmailJS initialized');
 })();
 
-// Function to initialize the form submission
 export function initOrderFormSubmission() {
-    const orderForm = document.getElementById('orderForm'); // Ensure this matches the form ID
-    const orderMessage = document.getElementById('orderMessage'); // The message div
+    const orderForm = document.getElementById('orderForm');
+    console.log('Order form found:', orderForm);
 
     if (orderForm) {
         orderForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission behavior
-  
-            const serviceID = 'service_b3u5zha'; // Your actual Service ID
-            const templateID = 'template_bgiq7hz'; // Your actual Template ID
+            event.preventDefault();
+            console.log('Form submission intercepted');
 
-            // Send the form data via EmailJS
+            const serviceID = 'service_4grcyt9';
+            const templateID = 'template_wpceeot';
+
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
-                    // Display the success message
-                    orderMessage.style.display = 'block';
-                    orderMessage.textContent = 'Order sent! You will be contacted via email or phone call.';
-                    
-                    orderForm.reset(); // Clear the form after submission
+                    console.log('Form submission successful');
+                    window.location.href = './message.html';
                 }, (err) => {
-                    // Handle any errors
-                    orderMessage.style.display = 'block';
-                    orderMessage.style.color = 'red';
-                    orderMessage.textContent = `Failed to send order request: ${err.text}`;
-                    console.error('Failed to send order request:', err); // Log the error for debugging
+                    console.error('Failed to send order request:', err);
                 });
         });
+    } else {
+        console.log('Order form not found');
     }
 }
 
-// Call the function to initialize the form submission
 initOrderFormSubmission();
-
-  
