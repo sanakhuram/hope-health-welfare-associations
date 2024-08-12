@@ -140,13 +140,18 @@ li a {
     font-weight: bold;
 }
 
-li:hover {
-    background-color: rgb(232, 222, 241);
+/* Active link styling */
+li a.active {
+    color: purple;
+    font-weight: bold;
 }
 
-li.active {
-    background-color: rgba(230, 156, 240, 0.986);
+/* Hover state styling */
+li a:hover {
+    color: purple;
 }
+
+
 
 .visually-hidden {
     position: absolute;
