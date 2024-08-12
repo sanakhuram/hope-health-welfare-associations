@@ -173,7 +173,7 @@ li a:hover {
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
-    background-color: rgb(250, 30, 114);
+    background-color: rgb(87, 20, 150);
     margin: 4px 0;
     transition: 0.4s;
 }
