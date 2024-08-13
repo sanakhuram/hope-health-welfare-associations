@@ -82,5 +82,24 @@ Follow us on social media:
 - [Facebook](https://www.facebook.com/hopehealthwelfare)
 - [Instagram](https://instagram.com/hopehealthwelfare)
 
-Thank you for your interest in the Hope and Health Welfare Association. Together, we can create a healthier, more educated, and empowered community!
+Thank you for your interest in the Hope and Health Welfare Association.
+
+---
+
+## Acknowledgments
+
+- **ChatGPT:** For providing assistance in crafting content and structuring information.
+- **MDN Web Docs:** For offering comprehensive and accessible documentation on web development. [Explore MDN Web Docs](https://developer.mozilla.org/)
+- **JavaScript Documentation:** For guiding us through scripting and enabling interactive features. [Visit JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## Developer's Note
+
+As a web developer, I have integrated various technologies to enhance the functionality and user experience of our site:
+
+- **JavaScript Integration:** I utilized JavaScript to create interactive features and dynamic content, ensuring a smooth and engaging user experience.
+- **EmailJS Implementation:** To facilitate easy and efficient communication, I integrated EmailJS, allowing users to send emails directly from the website without needing a backend server. This streamlined the process and improved the overall functionality.
+
+These tools and technologies have been instrumental in building a responsive and user-friendly platform for the Hope and Health Welfare Association.
+
+---
 
