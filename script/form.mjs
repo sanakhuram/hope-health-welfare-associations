@@ -1,13 +1,13 @@
 (function(){
-  emailjs.init("TgHWfRP3j9cb7-Mhc"); // Replace with your correct Public Key
+  emailjs.init("TgHWfRP3j9cb7-Mhc"); 
 })();
 
 export function initFormSubmission() {
   document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
 
-    const serviceID = 'service_b3u5zha'; // Your actual Service ID
-    const templateID = 'template_bgiq7hz'; // Your actual Template ID
+    const serviceID = 'service_b3u5zha'; 
+    const templateID = 'template_bgiq7hz'; 
 
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {

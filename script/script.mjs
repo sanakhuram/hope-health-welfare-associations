@@ -1,7 +1,7 @@
 
-import { initMenuToggle } from "./menu.js";
-import { initTransitionLinks } from "./transition.js";
-import { initImageGallery } from "./imageGallery.js";
+import { initMenuToggle } from "./menu.mjs";
+import { initTransitionLinks } from "./transition.mjs";
+import { initImageGallery } from "./imageGallery.mjs";
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
