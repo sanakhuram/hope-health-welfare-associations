@@ -46,6 +46,12 @@ export function initPhotoGallery() {
       caption: 'Ranal vocational institute student visit',
     },
     { src: './assets/images/18.jpg', caption: 'Caption for image 18' },
+
+    {
+      src: './assets/images/19.jpg',
+      caption: 'Visiting Faculty',
+    },
+    
     // Add more photos here
   ];
 
