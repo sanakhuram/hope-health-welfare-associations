@@ -1,144 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Contact the Hope and Health Welfare Association for more information, inquiries, or to support our mission through donations. Your contribution helps empower women and transform lives in Pakistan.">
+  <head>
+    <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact the Hope and Health Welfare Association for more information, inquiries, or to support our mission through donations. Your contribution helps empower women and transform lives in Pakistan."
+    />
     <title>Contact Us & Donate - Hope and Health Welfare Association</title>
-    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="./styles/news.css">
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/news.css" />
     <script type="module" src="./script/script.mjs"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="module" src="./script/form.mjs"></script> <!-- Separate script for form submission -->
-</head>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="module" src="./script/form.mjs"></script>
+    <!-- Separate script for form submission -->
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <a href="./index.html">
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Hope and Health Welfare Association Logo">
-                <h1>Hope and Health Welfare Association</h1>
-            </div>
-        </a>
-
-        <nav id="main-nav">
-            <span class="menu-toggle" id="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </span>
-            <ul id="main-menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html" class="transition-link">About us</a></li>
-                <li><a href="./contact.html" class="transition-link  active">Contact</a></li>
-                <li><a href="./work.html" class="transition-link">Our Work</a></li>
-                <li><a href="./news.html" class="transition-link">News</a></li>
-                <li><a href="./stitchbox.html" class="shop  transition-link">Our Shop</a></li>
-                <li><a href="./contact.html" class="donate  transition-link active">Donate</a></li>
-            </ul>
-        </nav>
+      <a href="./index.html">
+        <div class="logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="Hope and Health Welfare Association Logo"
+          />
+          <h1>Hope and Health Welfare Association</h1>
+        </div>
+      </a>
+      <div class="language-wrapper">
+        <div id="languageToggle" class="language-toggle">🌐</div>
+        <div id="languageDropdown" class="language-dropdown hidden">
+          <button class="lang-btn" data-lang="en">English</button>
+          <button class="lang-btn" data-lang="ur">اردو</button>
+        </div>
+      </div>
+      <div id="google_translate_element" style="display: none"></div>
+      <nav id="main-nav">
+        <span class="menu-toggle" id="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </span>
+        <ul id="main-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html" class="transition-link">About us</a></li>
+          <li>
+            <a href="./contact.html" class="transition-link active">Contact</a>
+          </li>
+          <li><a href="./work.html" class="transition-link">Our Work</a></li>
+          <li><a href="./news.html" class="transition-link">News</a></li>
+          <li>
+            <a href="./stitchbox.html" class="shop transition-link">Our Shop</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="donate transition-link active"
+              >Donate</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section>
-        <div class="news-banner">
-            <img src="./assets/images/news1.jpg" alt="banner photo">
-            <div class="banner-content">
-                <h2>Join Us in Our Mission</h2>
-                <p>"Support our mission to make a difference – your generosity changes lives."</p>
-            </div>
+      <div class="news-banner">
+        <img src="./assets/images/news1.jpg" alt="banner photo" />
+        <div class="banner-content">
+          <h2>Join Us in Our Mission</h2>
+          <p>
+            "Support our mission to make a difference – your generosity changes
+            lives."
+          </p>
+        </div>
+      </div>
+
+      <section class="container">
+        <div class="send-message">
+          <h2>Send Message</h2>
+          <form id="contactForm" action="#">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">SEND</button>
+          </form>
         </div>
 
-        <section class="container">
-            <div class="send-message">
-                <h2>Send Message</h2>
-                <form id="contactForm" action="#">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                    <button type="submit">SEND</button>
-                </form>
-            </div>
-
-            <div class="bank-details">
-                <h2>Donate Us</h2>
-                <p><span>We are now Open for Donations</span></p>
-                <p>Please inquire Bank Details through</p>
-                <p><span>Email</span> / <span>Phone Call</span></p>
-                <p><span>Phone: <a href="tel:+923035627179">+923035627179</a></span></p>
-                <p><span>Email:</span> <a href="mailto:hopehealthwelfare@gmail.com">hopehealthwelfare@gmail.com</a></p>
-            </div>
-        </section>
-
-        <div class="contact-info">
-            <h2>Contact us</h2>
-            <p>Address: Chak 56/2-L, G.T Road, Okara, Punjab</p>
-            <p>Postal code: 56300</p>
-            <p><span>Phone: <a href="tel:+923035627179">+923035627179</a></span></p>
-            <p><span>Email:</span> <a href="mailto:hopehealthwelfare@gmail.com">hopehealthwelfare@gmail.com</a></p>
+        <div class="bank-details">
+          <h2>Donate Us</h2>
+          <p><span>We are now Open for Donations</span></p>
+          <p>Please inquire Bank Details through</p>
+          <p><span>Email</span> / <span>Phone Call</span></p>
+          <p>
+            <span>Phone: <a href="tel:+923035627179">+923035627179</a></span>
+          </p>
+          <p>
+            <span>Email:</span>
+            <a href="mailto:hopehealthwelfare@gmail.com"
+              >hopehealthwelfare@gmail.com</a
+            >
+          </p>
         </div>
+      </section>
 
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3426.1421897827554!2d73.4905698!3d30.8266817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918090016114f9d%3A0xa816eb6d84e733f6!2sHope%20and%20Health%20Welfare%20Association!5e0!3m2!1sno!2sno!4v1720701898943!5m2!1sno!2sno"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contact-info">
+        <h2>Contact us</h2>
+        <p>Address: Chak 56/2-L, G.T Road, Okara, Punjab</p>
+        <p>Postal code: 56300</p>
+        <p>
+          <span>Phone: <a href="tel:+923035627179">+923035627179</a></span>
+        </p>
+        <p>
+          <span>Email:</span>
+          <a href="mailto:hopehealthwelfare@gmail.com"
+            >hopehealthwelfare@gmail.com</a
+          >
+        </p>
+      </div>
 
-        </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3426.1421897827554!2d73.4905698!3d30.8266817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918090016114f9d%3A0xa816eb6d84e733f6!2sHope%20and%20Health%20Welfare%20Association!5e0!3m2!1sno!2sno!4v1720701898943!5m2!1sno!2sno"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
 
-        <div class="feedback">
-            <p>We would love to hear from you! Whether you have questions, need more information, or want to support our
-                cause, please get in touch with us. You can also follow us on our social media channels for the latest
-                updates and news.</p>
-            <p>Join us in our mission to empower women and transform lives. Together, we can make a difference.</p>
-        </div>
+      <div class="feedback">
+        <p>
+          We would love to hear from you! Whether you have questions, need more
+          information, or want to support our cause, please get in touch with
+          us. You can also follow us on our social media channels for the latest
+          updates and news.
+        </p>
+        <p>
+          Join us in our mission to empower women and transform lives. Together,
+          we can make a difference.
+        </p>
+      </div>
     </section>
 
     <footer>
-        <section class="footer-logo">
-            <img src="./assets/images/logo.png" alt="logo">
-            <p>Hope and Health Welfare <br>Association</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/hopeandhealthorg/" target="_blank">
-                    <img src="./assets/images/fb.png" alt="Facebook icon">
-                </a>
-                <a href="https://www.instagram.com/stitchbox2022" target="_blank">
-                    <img src="./assets/images/insta.png" alt="Instagram icon">
-                </a>
-            </div>
-        </section>
-        <div class="copyright">
-            <p>Established in © 2010 this association is registered with reg.no.786/SDC/17</p>
+      <section class="footer-logo">
+        <img src="./assets/images/logo.png" alt="logo" />
+        <p>Hope and Health Welfare <br />Association</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/hopeandhealthorg/" target="_blank">
+            <img src="./assets/images/fb.png" alt="Facebook icon" />
+          </a>
+          <a href="https://www.instagram.com/stitchbox2022" target="_blank">
+            <img src="./assets/images/insta.png" alt="Instagram icon" />
+          </a>
         </div>
-        <section class="footer-info">
-            <p>Affiliated with:
-            <ul>
-                <li>Skill Development Council Punjab</li>
-                <li>National Training Bureau</li>
-                <li>Ministry of Federal Education and Professional Training, Govt of Pakistan</li>
-            </ul>
-            </p>
-        </section>
-        <section class="footer-nav">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About us</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./news.html" class="transition-link">News</a></li>
-                <li><a href="./stitchbox.html" class="shop">Our Shop</a></li>
-                <li><a href="./contact.html" class="donate">Donate</a></li>
-            </ul>
-        </section>
-        <div class="back-to-top">
-            <a href="./contact.html">Back to Top</a>
-        </div>
+      </section>
+      <div class="copyright">
+        <p>
+          Established in © 2010 this association is registered with
+          reg.no.786/SDC/17
+        </p>
+      </div>
+      <section class="footer-info">
+        <p>Affiliated with:</p>
+        <ul>
+          <li>Skill Development Council Punjab</li>
+          <li>National Training Bureau</li>
+          <li>
+            Ministry of Federal Education and Professional Training, Govt of
+            Pakistan
+          </li>
+        </ul>
+      </section>
+      <section class="footer-nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./news.html" class="transition-link">News</a></li>
+          <li><a href="./stitchbox.html" class="shop">Our Shop</a></li>
+          <li><a href="./contact.html" class="donate">Donate</a></li>
+        </ul>
+      </section>
+      <div class="back-to-top">
+        <a href="./contact.html">Back to Top</a>
+      </div>
     </footer>
     <div class="footer-end">
-        <p>© 2024 Hope and Health Welfare Association</p>
-        <p>For website development contact at <a href="mailto:sana.khuram.baig@gmail.com">sana.khuram.baig@gmail.com</a></p>
+      <p>© 2024 Hope and Health Welfare Association</p>
+      <p>
+        For website development contact at
+        <a href="mailto:sana.khuram.baig@gmail.com"
+          >sana.khuram.baig@gmail.com</a
+        >
+      </p>
     </div>
-</body>
-
+  </body>
 </html>

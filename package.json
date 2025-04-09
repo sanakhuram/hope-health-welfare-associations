@@ -1,0 +1,11 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,mjs,js,css}\"",
+    "dev": "your-dev-command-here"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}

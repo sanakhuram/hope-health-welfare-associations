@@ -1,11 +1,12 @@
+import { initMenuToggle } from './menu.mjs';
+import { initTransitionLinks } from './transition.mjs';
+import { initImageGallery } from './imageGallery.mjs';
+import { initGoogleTranslate } from './translate.mjs';
 
-import { initMenuToggle } from "./menu.mjs";
-import { initTransitionLinks } from "./transition.mjs";
-import { initImageGallery } from "./imageGallery.mjs";
-
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM fully loaded and parsed");
+document.addEventListener('DOMContentLoaded', function () {
+  console.log('DOM fully loaded and parsed');
   initMenuToggle();
   initTransitionLinks();
   initImageGallery();
+  initGoogleTranslate();
 });

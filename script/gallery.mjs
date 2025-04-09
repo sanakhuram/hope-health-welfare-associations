@@ -1,28 +1,28 @@
 export function initDraggableGallery() {
-  const galleryContainer = document.querySelector(".gallery-container");
+  const galleryContainer = document.querySelector('.gallery-container');
 
   let isDown = false;
   let startX;
   let scrollLeft;
 
-  galleryContainer.addEventListener("mousedown", (e) => {
+  galleryContainer.addEventListener('mousedown', (e) => {
     isDown = true;
-    galleryContainer.classList.add("active");
+    galleryContainer.classList.add('active');
     startX = e.pageX - galleryContainer.offsetLeft;
     scrollLeft = galleryContainer.scrollLeft;
   });
 
-  galleryContainer.addEventListener("mouseleave", () => {
+  galleryContainer.addEventListener('mouseleave', () => {
     isDown = false;
-    galleryContainer.classList.remove("active");
+    galleryContainer.classList.remove('active');
   });
 
-  galleryContainer.addEventListener("mouseup", () => {
+  galleryContainer.addEventListener('mouseup', () => {
     isDown = false;
-    galleryContainer.classList.remove("active");
+    galleryContainer.classList.remove('active');
   });
 
-  galleryContainer.addEventListener("mousemove", (e) => {
+  galleryContainer.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - galleryContainer.offsetLeft;

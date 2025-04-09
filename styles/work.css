@@ -1,260 +1,259 @@
 @import url(./global.css);
 
-
-
 .work-banner {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .work-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contents {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(151, 151, 151, 0.7);
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(151, 151, 151, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
 }
 
 .contents h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .contents p {
-    font-size: 1em;
-    color: #fff;
-    margin-bottom: 10px;
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .contents p {
-        display: none;
-    }
+  .contents p {
+    display: none;
+  }
 
-    .contents h2 {
-        font-size: 20px;
-    }
+  .contents h2 {
+    font-size: 20px;
+  }
 }
-
 
 /*courses*/
 
-
 .course-section {
-    border-radius: 40px;
-    padding: 20px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    position: relative;
-    overflow: hidden;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .course-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
-    border-radius: 40px;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  border-radius: 40px;
+  z-index: -1;
 }
 
 .course-section h3 {
-    text-align: center;
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.course-section p, .course-section h4 {
-    text-align: center;
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
+.course-section p,
+.course-section h4 {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .course-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .text-image {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .text-image:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .course-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .course-list li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: #555;
-    text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #555;
+  text-align: left;
 }
 
 .course-list li strong {
-    color: #555;
+  color: #555;
 }
 
 .text-image img {
-    width: 30%;
-    height: auto;
-    border-radius: 20px;
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
 }
 
 /* Specific Background Gradients */
 .computer-skills {
-    background: linear-gradient(180deg, #9CD4E6 0%, #FFF 100%);
+  background: linear-gradient(180deg, #9cd4e6 0%, #fff 100%);
 }
 
 .stitching-sewing {
-    background: linear-gradient(180deg, #9FCDCB 0%, #FFF 100%);
+  background: linear-gradient(180deg, #9fcdcb 0%, #fff 100%);
 }
 
 .dars-i-nizami {
-    background: linear-gradient(180deg, #FEC7EC 43.5%, #FEDFF4 68%, #FFF 100%);
+  background: linear-gradient(180deg, #fec7ec 43.5%, #fedff4 68%, #fff 100%);
 }
 
 .embroidery-course {
-    background: linear-gradient(180deg, #B2B8E2 0%, #FFFEFE 100%);
+  background: linear-gradient(180deg, #b2b8e2 0%, #fffefe 100%);
 }
 
 .self-grooming-courses {
-    border-radius: 40px;
-    background: linear-gradient(180deg, #97D1E5 0%, #FFF 100%);
+  border-radius: 40px;
+  background: linear-gradient(180deg, #97d1e5 0%, #fff 100%);
 }
 
 .culinary-arts {
-    background: linear-gradient(180deg, #97D1E5 0%, #FFF 100%);
+  background: linear-gradient(180deg, #97d1e5 0%, #fff 100%);
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .course-section {
-        padding: 15px;
-        margin: 10px;
-    }
+  .course-section {
+    padding: 15px;
+    margin: 10px;
+  }
 
-    .text-image:nth-child(even) {
-        flex-direction: column;
-    }
+  .text-image:nth-child(even) {
+    flex-direction: column;
+  }
 
-    .course-section h3 {
-        font-size: 24px;
-    }
+  .course-section h3 {
+    font-size: 24px;
+  }
 
-    .course-section h4 {
-        font-size: 20px;
-    }
+  .course-section h4 {
+    font-size: 20px;
+  }
 
-    .text-image {
-        flex-direction: column;
-    }
+  .text-image {
+    flex-direction: column;
+  }
 
-    .text-image img {
-        width: 50%;
-    }
+  .text-image img {
+    width: 50%;
+  }
 
-    .course-list {
-        width: 100%;
-    }
+  .course-list {
+    width: 100%;
+  }
 
-    .course-list li {
-        font-size: 16px;
-    }
+  .course-list li {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
-    .course-section {
-        padding: 10px;
-        margin: 5px;
-    }
+  .course-section {
+    padding: 10px;
+    margin: 5px;
+  }
 
-    .course-section h3 {
-        font-size: 20px;
-    }
+  .course-section h3 {
+    font-size: 20px;
+  }
 
-    .course-section h4 {
-        font-size: 16px;
-    }
+  .course-section h4 {
+    font-size: 16px;
+  }
 
-    .text-image {
-        flex-direction: column-reverse;
-    }
+  .text-image {
+    flex-direction: column-reverse;
+  }
 
-    .text-image img {
-        width: 50%;
-        padding: 10px;
-    }
+  .text-image img {
+    width: 50%;
+    padding: 10px;
+  }
 
-    .course-list {
-        width: 100%;
-    }
+  .course-list {
+    width: 100%;
+  }
 
-    .course-list li {
-        font-size: 14px;
-    }
+  .course-list li {
+    font-size: 14px;
+  }
 }
 
 .support-facilities {
-    background-color: #E4D6DD;
-    padding: 20px;
-    margin: 0 auto;
-    border-radius: 10px;
-    max-width: 1200px;
+  background-color: #e4d6dd;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 1200px;
 }
 
 .support-facilities h3 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .support-facilities .content {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 .support-facilities h4 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .support-facilities p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
 }
