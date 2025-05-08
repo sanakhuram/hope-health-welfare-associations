@@ -4,7 +4,6 @@ import { initImageGallery } from './imageGallery.mjs';
 import { initGoogleTranslate } from './translate.mjs';
 
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('DOM fully loaded and parsed');
   initMenuToggle();
   initTransitionLinks();
   initImageGallery();
